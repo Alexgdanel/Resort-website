@@ -7,17 +7,21 @@
 
 #home{
     height: 100vh;
-    background-color: rgb(88, 65, 65);
+    background-image: url('./images/image.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+   
+    background-repeat: no-repeat;
+
+   
 
 }
 
 #navbar{
-
-    height: 20vh;
-     /* background-color: rgb(121, 106, 106);  */
+     
+    background-color: rgb(46,57,68);
+    background-color: rgba(46,57,68, 0.9);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -28,15 +32,36 @@
     list-style: none;
     display: inline;
     margin: 0px 20px 0px 20px;
+    width: 180px;
+    height: 60px;
+    
 }
 .links{
     text-decoration: none;
-    color: azure;
+    color: white;
+    font-size: medium;
+}
+.links:hover{
+   
+    color: #d3d9d4;
+    
 }
 .headline{
-    align-items: center;
+   
+   
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
     text-align: center;
-    margin: 200px 0px;
+   
 }
 .headline>h1{
     font-size: 70px;
@@ -46,22 +71,22 @@
 #description{
     height: 90vh;
     margin: 80px 80px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     display: grid;
     grid-template-columns: repeat(2,50%);
 }
 .imagesection{
-    background-color: bisque;
+   
     position: relative;
 }
 .about{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     
 }
 .img{
-    background-color: brown;
+    /* background-color: brown; */
     position: absolute;
-    border: 1px solid black;
+   
     height: 55vh;
     width: 40%;
 }
@@ -70,10 +95,16 @@
     top: 158px;
     right: 35;
     bottom: 35px;
+    background-image: url('./images/wallpaperflare.com_wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
 }
 #img1{
    margin-top: 35px;
     margin-left: -35 px;
+    background-image: url('./images/pic2.jpg');
+    background-position: center;
+    background-size: cover;
 }
 .about h4{
     margin: 150px 20px 20px 20px;
@@ -84,6 +115,7 @@
 .about p{
     margin: 20px 20px 150px 20px;
     justify-content: space-around;
+    line-height: 1.4rem;
 }
 #suites{
     height: 123vh;
@@ -101,8 +133,8 @@
     font-size: 60px;
  
 }
-#suites h3{
-    color: azure;
+#sdesc{
+    color: rgb(143, 143, 143);
     text-align: center;
     margin-top: 30px;
 }
@@ -118,8 +150,34 @@
     justify-content: center;
 }
 .suitimg{
-    background-color: blanchedalmond;
+    background-color: rgb(255, 255, 255);
     border: 1px solid blue;
+}
+.sname{
+   color: black;
+   margin: 10px 0px;
+   text-align: center;
+}
+.sudio{
+    width: 100%;
+    height: 35vh;
+}
+.para{
+    text-align: center;
+    line-height: 1rem;
+}
+.suitbook{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    background-color: rgb(122, 48, 48);
+    border: 0px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: medium;
 }
 .visits{
     margin-top: 40px;
@@ -148,7 +206,7 @@
 }
 #dining{
     padding-top: 50px;
-    background-color: rgb(73, 73, 44);
+    /* background-color: rgb(73, 73, 44); */
     margin: 0px 80px;
     height: 100vh;
     width: 90%;
@@ -159,7 +217,7 @@
 .itemsgroup{
     width: 100%;
     height: 70vh;
-    background-color: rgb(91, 116, 116);
+    /* background-color: rgb(91, 116, 116); */
     display: grid;
     grid-template-columns: repeat(2,49.6%);
     grid-template-rows: (2,40%);
@@ -171,14 +229,25 @@
 .opt{
     background-color: aquamarine;
     margin-left: 46%;
-    width: 100px;
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .opt a{
-    margin-left:3px;
+   text-align: center;
+   text-decoration: none;
+   color: black;
+}
+.opt :hover{
+   
+    color: aqua;
 }
 .dish{
     width: 100%;
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0); */
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -187,8 +256,28 @@
 }
 .pic
 {
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 50%;
+}
+#pic1{
+    background-image: url('https://images.adsttc.com/media/images/63ab/1773/adb1/7401/70b0/b06a/slideshow/akaari-premium-restaurant-nh-village-architects_4.jpg?1672157059');
+    background-position: center;
+    background-size: cover;
+}
+#pic2{
+    background-image: url('https://www.tastingtable.com/img/gallery/we-need-to-stop-calling-alcohol-free-beverages-mocktails/intro-1696863302.webp');
+    background-position: center;
+    background-size: cover;
+}
+#pic3{
+    background-image: url('https://cdn.pixabay.com/photo/2023/10/28/06/40/wine-8346641_1280.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#pic4{
+    background-image: url('https://thearchitectsdiary.com/wp-content/uploads/2020/09/feat-arghusk-1024x683.jpg');
+    background-position:center ;
+    background-size: cover;
 }
 .itemd{
     background-color: blue;
@@ -226,4 +315,144 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+#contact{
+    width: 100%;
+    height: 80vh;
+    background-color: brown;
+    display: flex;
+}
+.info{
+    padding-top: 80px;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size:large;
+    background-color: rgb(112, 112, 117);
+}
+#margin{
+   
+    margin:20px 20px;
+}
+.logosec{
+    width: 40%;
+    column-gap: 10px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    row-gap: 20px;
+}
+.logosec i{
+    justify-self: start;
+    align-self: center;
+}
+.bookpart{
+    height: 80vh;
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.booking
+{
+    width: 50%;
+    height: 50vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px;
+}
+.stardate{
+    align-content: space-between;
+}
+#start{
+    width: 180px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 0px;
+    height: 30px;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+#end{
+    width: 180px;
+    margin-left: 45px;
+    border: none;
+    border-radius: 0px;
+    height: 30px;
+    border-bottom: 1px solid;
+}
+#counted{
+    width: 180px;
+    margin-left: 35px;
+    border: none;
+    border-radius: 0px;
+    height: 30px;
+    border-bottom: 1px solid;
+    padding-left: 13%;
+}
+.bookbtn{
+    width: 100px;
+    height: 40px;
+    margin-left: 35%;
+    margin-top: 20px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+#booknow{
+    text-decoration: none;
+    font-size: smaller;
+    color: bisque;
+}
+.bookbtn:hover{
+    background-color: rgb(255, 180, 88);
+}
+#footer{
+    height: 70vh;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+.footerit{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   height: 60vh;
+}
+.footerit li{
+    list-style: none;
+    text-decoration: none;
+    margin: 10px 0px;
+}
+.l{
+    text-decoration: none;
+    color: aliceblue;
+}
+#goup{
+    height: 60vh;
+    display: flex;
+    justify-content: end;
+    
+}
+.uparrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 45px;
+   
 }
