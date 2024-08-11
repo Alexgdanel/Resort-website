@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Jaro:opsz@6..72&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nosifer&family=Nova+Round&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <div id="container">
@@ -15,12 +24,12 @@
             <nav id="navbar">
             <img width="150px" src="./images/logo.png" alt="" class="logo">
             <ul>
-                <li class="listitem"><a href="" class="links">Home</a></li>
-                <li class="listitem"><a href="" class="links">Suites</a></li>
-                <li class="listitem"><a href="" class="links">Dining</a></li>
-                <li class="listitem"><a href="" class="links">Offers</a></li>
-                <li class="listitem"><a href="" class="links">Booking</a></li>
-                <li class="listitem"><a href="" class="links">Contact</a></li>
+                <li class="listitem"><a href="#home" class="links">Home</a></li>
+                <li class="listitem"><a href="#suites" class="links">Suites</a></li>
+                <li class="listitem"><a href="#dining" class="links">Dining</a></li>
+                <li class="listitem"><a href="#facilities" class="links">Facilites</a></li>
+                <li class="listitem"><a href="#contact" class="links">Booking</a></li>
+                <li class="listitem"><a href="#footer" class="links">Contact</a></li>
             </ul>
             </nav>
             <div class="headline">
@@ -31,13 +40,16 @@
         <!-- description -->
          <section id="description">
             <div class="imagesection">
-                <div class="img" id="img1"></div>
-                <div class="img" id="img2"></div>
+                <div data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"  class="img" id="img1"></div>
+                <div  data-aos="fade-up"
+                data-aos-duration="3000"  class="img" id="img2"></div>
 
             </div>
             <div class="about">
-                <h4>Luxury meets nature in a serene paradise</h4>
-                <h1>SERENE PARADISE</h1>
+                <h4 >Luxury meets nature in a serene paradise</h4>
+                <h1 class="animate__backInLeft">SERENE PARADISE</h1>
                 <p>Nestled in a pristine location, Serene Paradise offers a perfect escape from the everyday hustle,  blending opulent comfort with the beauty of nature. This enchanting resort boasts elegantly designed  villas and suites, each providing panoramic views of lush landscapes or serene waters. Guests can  indulge in world-class amenities, including a tranquil spa, gourmet dining, and an infinity pool that seems to merge with the horizon. The resort's commitment to personalized service ensures that  every detail is tailored to provide a unique and unforgettable experience. Whether you're seeking relaxation or adventure, Serene Paradise promises a retreat where tranquility and luxury come together seamlessly.</p>
 
             </div>
@@ -48,31 +60,31 @@
             <h1 class="shead">SUITES</h1>
             <h3 class="sdesc">Experience unparalleled luxury and tranquility in every suite at Serene Paradise Resort</h3>
             <div class="suitsec"> 
-                    <div class="suitimg">
+                    <div data-aos="zoom-in-down" class="suitimg">
                         <img src="https://i.pinimg.com/564x/03/71/a8/0371a817d468140706c686542fcf0311.jpg" alt="" class="sudio">
                         <h3 class="sname">EXECUTIVE SUITES</h3>
                         <p class="para">The Executive Suites is 800 sq. ft. bespeak elegance with warm wooden floors, luxuriously comfortable furniture,and bedroom</p>
                         <a href="#gotobook" class="suitbook">BOOK</a>
                     </div> 
-                    <div class="suitimg">
+                    <div data-aos="zoom-in-down" class="suitimg">
                         <img src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2014/09/21/1657/OGGAW-P069-Villa-Bedroom.jpg/OGGAW-P069-Villa-Bedroom.4x3.jpg" alt="" class="sudio">
                         <h3 class="sname">SUDIO SUITES</h3>
                         <p class="para">The sudio Suites is 600 sq. ft. bespeak elegance with warm wooden floors, luxuriously comfortable furniture,and bedroom</p>
                         <a href="#gotobook" class="suitbook">BOOK</a>
 
                     </div> 
-                    <div class="suitimg">
+                    <div data-aos="zoom-in-down" class="suitimg">
                         <img src="https://img.freepik.com/premium-photo/luxury-tropical-bedroom-suite-resort-hotel-building-interior-design-concept_861577-553.jpg?w=826" alt="" class="sudio">
                         <h3 class="sname">CLUB SUITES</h3>
-                        <p class="para">The club Suites is 800 sq. ft. bespeak elegance with warm wooden floors, luxuriously comfortable furniture,and  a bedroom</p>
+                        <p class="para">The club Suites is 800 sq. ft. bespeak elegance with warm wooden floors, luxuriously comfortable furniture</p>
                         <a href="#gotobook" class="suitbook">BOOK</a>
 
 
                     </div> 
-                    <div class="suitimg">
+                    <div data-aos="zoom-in-down" class="suitimg">
                         <img src="https://res.cloudinary.com/simplotel/image/upload/w_1000,h_667/x_0,y_52,w_1000,h_563,r_0,c_crop/q_80,w_1600,dpr_1,f_auto,fl_progressive,c_limit/caravela-beach-resort-goa/Deluxe_Room_3_z1wbho_g6taem" alt="" class="sudio">
                         <h3 class="sname">PREMIUM SUITES</h3>
-                        <p class="para">The Premium Suites is 1000 sq. ft. bespeak elegance with warm wooden floors, luxuriously comfortable furniture,and 3 bedroom</p>
+                        <p class="para">The Premium Suites is 1000 sq. ft. bespeak elegance with warm wooden floors, luxuriously comfortable furniture</p>
                         <a href="#gotobook" class="suitbook">BOOK</a>
 
 
@@ -80,7 +92,7 @@
             </div>
             <div class="visits">
 
-                    <a href="" class="visit">Visit Suites</i>
+                    <a href="#suites" class="visit">Visit Suites</i>
                  </a> 
                  <i class="fa-solid fa-right-long right" style="color: #ffffff;"></i> 
 
@@ -96,7 +108,7 @@
                 <h3>Indulge in exquisite culinary delights and breathtaking views at Serene Paradise Resort's dining venues</h3>
             </div>
             <div class="itemsgroup">
-                <div class="dish" id="d1">
+                <div  data-aos="zoom-in-up" class="dish" id="d1">
                     <div class="pic" id="pic1"></div>
                     <div class="itemd">
                         <h1 class="cafename">Cilians's Brewhouse</h1>
@@ -104,7 +116,7 @@
                     </div>
 
                 </div>
-                <div class="dish" id="d2">
+                <div  data-aos="zoom-in-up" class="dish" id="d2">
                     <div class="pic" id="pic2"></div>
                     <div class="itemd">
                         <h1 class="cafename">Tom Mocktail</h1>
@@ -112,7 +124,7 @@
                     </div>
 
                 </div>
-                <div class="dish" id="d3">
+                <div  data-aos="zoom-in-up" class="dish" id="d3">
                    
                     <div class="itemd">
                         <h1 class="cafename">Premium Bar</h1>
@@ -123,7 +135,7 @@
                     </div>
 
                 </div>
-                <div class="dish" id="d4">
+                <div  data-aos="zoom-in-up" class="dish" id="d4">
                     
                     <div class="itemd">
                         <h1 class="cafename">Indian dishes</h1>
@@ -138,46 +150,46 @@
          </section>
         <!-- offers -->
          <section id="facilities">
-            <h1>LUXURY FACILITIES</h1>
-            <p>Serene Paradise offers an array of luxury facilities, including a world-class spa, private beach cabanas, and gourmet dining experiences, ensuring an unforgettable escape into tranquility</p>
+            <h1 class="lux">LUXURY FACILITIES</h1>
+            <p class="luxp">Serene Paradise offers an array of luxury facilities, including a world-class spa, private beach cabanas, and gourmet dining experiences, ensuring an unforgettable escape into tranquility</p>
             <div class="services">
-                <div class="servicedesc">
-                    <i class="fa-solid fa-wifi icon fa-3x" style="color: #511f1f;"></i>
+                <div data-aos="zoom-out" class="servicedesc">
+                    <i class="fa-solid fa-wifi icon fa-3x"></i>
                     <div class="s1">
                         <h1>WIFI</h1>
                         <p>Serene Paradise Resort offers complimentary Wi-Fi throughout the property, ensuring you stay connected during your relaxing getaway</p>
                     </div>
                 </div>
-                <div class="servicedesc">
-                    <i class="fa-solid fa-user-tie icon fa-3x" style="color: #935353;"></i>
+                <div data-aos="zoom-out" class="servicedesc">
+                    <i class="fa-solid fa-user-tie icon fa-3x" ></i>
                     <div class="s1">
                         <h1>TRAVEL DESK</h1>
                         <p>Experience the convenience of our Travel Desk facility at Serene Paradise Resort, where your journey begins with us</p> 
                     </div>
                 </div>
-                <div class="servicedesc">
-                    <i class="fa-solid fa-champagne-glasses icon fa-3x" style="color: #673232;"></i>
+                <div data-aos="zoom-out" class="servicedesc">
+                    <i class="fa-solid fa-champagne-glasses icon fa-3x"></i>
                     <div class="s1">
                         <h1>PERSONAL BAR</h1>
                         <p>Enjoy the exclusive personal bar facility at Serene Paradise Resort, where luxury meets relaxation</p> 
                     </div>
                 </div>
-                <div class="servicedesc">
-                    <i class="fa-regular fa-building icon fa-3x" style="color: #621d21;"></i>
+                <div data-aos="zoom-out" class="servicedesc">
+                    <i class="fa-regular fa-building icon fa-3x"></i>
                     <div class="s1">
                         <h1>BUISINESS CENTER</h1>
                         <p>Welcome to the business facility at Serene Paradise, where productivity meets luxury in an inspiring environment</p> 
                     </div>
                 </div>
-                <div class="servicedesc">
-                    <i class="fa-solid fa-shirt icon fa-3x" style="color: #603434;"></i>
+                <div data-aos="zoom-out" class="servicedesc">
+                    <i class="fa-solid fa-shirt icon fa-3x"></i>
                     <div class="s1">
                         <h1>LAUNDRY</h1>
                         <p>Enjoy the convenience of our laundry facility at Serene Paradise Resort</p>
                     </div>
                 </div>
-                <div class="servicedesc">
-                    <i class="fa-solid fa-user-tie icon fa-3x" style="color: #671818;"></i>
+                <div data-aos="zoom-out" class="servicedesc">
+                    <i class="fa-solid fa-user-tie icon fa-3x" ></i>
                     <div class="s1">
                         <h1>CONCIERGE</h1>
                         <p>Experience the exceptional concierge services at Serene Paradise, where your every need is met with personalized care and attention</p>
@@ -191,14 +203,16 @@
             <h1 id="margin">Connect with us </h1>
             <p id="margin" >Serene Paradise is a tranquil resort nestled in the vibrant city of Mumbai, offering a peaceful retreat from the city's hustle and bustle. Located in a lush, green area, it combines modern amenities with natural beauty, making it an ideal getaway for relaxation. Whether you're looking to unwind by the pool, enjoy a spa treatment, or explore nearby attractions, Serene Paradise provides a perfect blend of comfort and serenity</p>
          <div id="margin" class="logosec">
-                <i class='bx bx-envelope bx-xl' style='color:#ff0a0a'  ></i>
+                <i class='bx bx-envelope bx-xl' style='color: #124e66'  ></i>
                 <p>Email <br> sereneparadise@gmail.com </p>
-                <i class='bx bx-phone' style='color:#d06262'  ></i>
+                <i class='bx bx-phone' style='color: #124e66'  ></i>
                 <p>Phone <br> 675435644</p>
             </div>
         </div>
            <div class="bookpart" id="gotobook">
-            <div class="booking" >
+            <div data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" class="booking" >
                 <h1>RESERVATION</h1>
                
                 <div class=" stardate">
@@ -213,7 +227,7 @@
                     <label for="counted">FOR</label>
                     <input type="number" placeholder="enter the count" id="counted">
                 </div>
-                <div class="bookbtn">
+                <div  class="bookbtn">
                 <a href="" id="booknow">BOOK</a>
                 </div>
             </div>
@@ -221,7 +235,7 @@
          </section>
       
         <!-- footer -->
-         <seection id="footer">
+         <section id="footer">
             <div class="footerit">
                 <h1>Contact Info</h1>
                 <p>Serene Paradise mumbai street andheri maharashtra
@@ -229,9 +243,9 @@
                 </p>
                 <h1>Follow us</h1>
                 <div class="media">
-                    <i class="fa-brands fa-facebook" style="color: #000000;"></i>
-                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
-                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #748d92;"></i>
+                    <i class="fa-brands fa-instagram" style="color: #748d92;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #748d92;"></i>
                 </div>
             </div>
             <div class="footerit">
@@ -245,15 +259,19 @@
                 </ul>
             </div>
             <div class="footerit" id="goup">
-                <div class="uparrow">
-                 <a href=""><i class="fa-solid fa-arrow-up fa-2x upicon" style="color: #ff8800;"></i></a>
+                <div  class="uparrow">
+                 <a href=""><i class="fa-solid fa-arrow-up fa-2x upicon" ></i></a>
                 </div>
             </div>
-         </seection>
+         </section>
 
     </div>
 
 
     
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>
