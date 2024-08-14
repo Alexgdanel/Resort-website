@@ -31,6 +31,17 @@
     align-items: center;
     height: 80px;
 }
+#check{
+    display: none;
+}
+.navicons{
+    font-size: 2.5rem;
+    display: none;
+    position: absolute;
+    right: 5%;
+    color: #d3d9d4;
+
+}
 .listitem{
     list-style: none;
     display: inline;
@@ -60,7 +71,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
     width: 80%;
     padding: 20px;
     text-align: center;
@@ -143,7 +153,7 @@
     width: 100%;
     align-items: center;
     box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-   
+    flex-wrap: nowrap;
 }
 .shead{
     
@@ -570,4 +580,189 @@
 }
 .uparrow:hover .upicon{
     color: #d3d9d4;
+}
+@media (max-width:480px){
+    #container{
+        display: block;
+        margin: 0;
+    }
+#home{
+    width: auto;
+    height: 100vh;
+  
+}
+.navlist{
+position:absolute;
+top: 100%;
+background-color: #2E3944;
+width: 100%;
+left: 0px;
+display: none;
+}
+.navlist a{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+.navicons{
+    display: flex;
+}
+#close{
+    display: none;
+}
+#check:checked~ .navicons #menuicon{
+    display: none;
+}
+#check:checked~ .navicons #close{
+    display: block;
+}
+#check:checked~ .navlist{
+    display: block;
+}
+.headline{
+    padding: 8px;
+    height: 80px;
+    width: 80%;
+    align-items: center;
+}
+.headline>h1{
+    font-size: 22px;
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#description{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    
+}
+.imagesection{
+    margin-bottom: 210px;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+
+
+}
+.img{
+    width:200px;
+    height: 150px;
+    position: absolute;
+    
+}
+#img2{
+left: 60px;
+top: 200px;
+right: 0px;
+
+}
+#img1{
+    top: 0px;
+    
+}
+.about{
+   margin-left: 50px;
+}
+#suites{
+   height: auto;
+  
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.suitsec{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.suitimg{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.suitbook{
+    width: 100px;
+    margin-left: 150px;
+    ;
+}
+.visits{
+    margin-top: 1250px;
+    width: 200px;
+}
+#dining{
+    height: auto;
+;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+background-color: white;
+}
+.itemsgroup{
+    margin: 20px 0px;
+   height: 10%;
+   display: flex;
+   flex-wrap: wrap;
+   
+}
+.itemd{
+    
+    align-items: start;
+}
+.opt{
+   margin-top: 40px;
+   margin-left: 35%;
+   
+}
+#facilities
+{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: small;
+    font-weight: 600;
+}
+.luxp
+
+{
+    margin: 20px 0px;
+}
+.services
+{
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicedesc
+{
+    margin-top: auto;
+    height: 100px;
+}
+#contact{
+    height: auto;
+    width: auto;
+    display: block;
+}
+.info{
+    height: auto;
+    width: fit-content;
+}
+.info p{
+ text-align: justify;
+ line-height: 1;
+}
+.booking{
+    height: auto;
+    width: 300px;
+    margin-left: 70%;
+    margin-top: 0px;
+}
+
 }
